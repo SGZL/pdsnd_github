@@ -8,6 +8,12 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 months = ['january','february','march','april','may','june']
 days =['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
 
+def breakline():
+    print('-'*40)
+
+def salutations():
+    print('Hello! Let\'s explore some US bikeshare data!')
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -17,7 +23,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    salutations()
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('Would you like to see data for Chicago, New York City or Washington?\n').lower()
@@ -58,7 +64,7 @@ def get_filters():
             continue
 
 
-    print('-'*40)
+    breakline()
     return city, month, day
 
 
@@ -120,7 +126,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 
 def station_stats(df):
@@ -146,7 +152,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 
 def trip_duration_stats(df):
@@ -167,7 +173,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 
 def user_stats(df):
@@ -200,7 +206,7 @@ def user_stats(df):
         
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 def display_rows(df):
     """Display data in rows of fives"""
