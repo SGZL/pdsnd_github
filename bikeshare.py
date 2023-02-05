@@ -8,6 +8,10 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 months = ['january','february','march','april','may','june']
 days =['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
 
+def breakline():
+    print('-'*40)
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -58,7 +62,7 @@ def get_filters():
             continue
 
 
-    print('-'*40)
+    breakline()
     return city, month, day
 
 
@@ -120,7 +124,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 
 def station_stats(df):
@@ -146,7 +150,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 
 def trip_duration_stats(df):
@@ -167,7 +171,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 
 def user_stats(df):
@@ -200,7 +204,7 @@ def user_stats(df):
         
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    breakline()
 
 def display_rows(df):
     """Display data in rows of fives"""
