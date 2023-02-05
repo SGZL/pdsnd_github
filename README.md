@@ -17,4 +17,5 @@ README.md
 
 ### Credits
 https://github.com/udacity/pdsnd_github
+https://www.udacity.com/
 
