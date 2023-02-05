@@ -2,7 +2,7 @@
 05 February 2023
 
 ### Project Title
-Bike Share Data for three major US cities
+Bike Share Data Analysis for three major US cities
 
 ### Description
 Project analyses bicycle share data in three US cities as part of Udacity's Programming for Data Science Course.
